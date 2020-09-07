@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Павел Мареев](https://up.htmlacademy.ru/htmlcss/29/user/1343135).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
