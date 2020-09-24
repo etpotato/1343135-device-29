@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header class="page-header header container">
+    <header class="page-header header header-expanded container">
       <nav class="site-nav">
         <a class="logo header-logo">
           <img src="img/logo-header.svg" width="163" height="35" alt="Логотип магазина электроники «Девайс»">
@@ -25,10 +25,10 @@
         <a class="header-link logout header-logout" href="blank.html">Выйти</a>
         -->
         <a class="header-link compare header-compare" href="blank.html">Сравнить</a>
-        <a class="header-link card header-card" href="blank.html">Корзина</a>      
-        <ul class="nav-list">
+        <a class="header-link card header-card" href="blank.html">Корзина</a>
+        <ul class="nav-list header-nav-list">
           <li class="nav-item nav-item-catalog">
-            <a href="catalog.html">Католог товаров</a>
+            <a class="nav-link nav-link-catalog" href="catalog.html">Катaлог товаров</a>
             <!-- Открытый выпадающий список, начало -->
             <ul class="nav-catalog-list">
               <li class="nav-catalog-item"><a href="catalog.html">Виртуальная реальность</a></li>
@@ -40,9 +40,9 @@
             </ul>
             <!-- Открытый выпадающий список, конец -->
           </li>
-          <li class="nav-item"><a href="blank.html">Доставка</a></li>
-          <li class="nav-item"><a href="blank.html">Гарантия</a></li>
-          <li class="nav-item"><a href="blank.html">Контакты</a></li>
+          <li class="nav-item"><a class="nav-link" href="blank.html">Доставка</a></li>
+          <li class="nav-item"><a class="nav-link" href="blank.html">Гарантия</a></li>
+          <li class="nav-item"><a class="nav-link" href="blank.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -54,7 +54,7 @@
           <!-- Слайд 1 -->
           <li class="slider-item">
             <h3 class="visually-hidden">Самая длинная селфи-палка</h3>
-            <img src="img/slider-1.png" width="384" height="486" alt="Чёрная телескопическая селфи-палка">
+            <img class="slider-image" src="img/slider-1.png" width="384" height="486" alt="Чёрная телескопическая селфи-палка">
             <p class="main-title slider-title">Делай селфи, <br>как Бен Стиллер!</p>
             <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <table class="slider-specs specs-table">
@@ -76,7 +76,7 @@
           <!-- Слайд 2 -->
           <li class="slider-item">
             <h3 class="visually-hidden">Фитнесс-браслет</h3>
-            <img src="img/slider-2.png" width="345" height="485" alt="Чёрный фитнесс-браслет с надписью на экране: «Я вижу, что ты снова ешь».">
+            <img class="slider-image" src="img/slider-2.png" width="345" height="485" alt="Чёрный фитнесс-браслет с надписью на экране: «Я вижу, что ты снова ешь».">
             <p class="main-title slider-title">Худеем <br>правильно!</p>
             <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы  
               не пропускать занятия и соблюдать диету.</p>
@@ -95,7 +95,7 @@
           <!-- Слайд 3 -->
           <li class="slider-item">
             <h3 class="visually-hidden">Квадрокоптер с лазером</h3>
-            <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер, стреляющий из лазерной пушки, прикрепленной к корпусу">
+            <img class="slider-image" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер, стреляющий из лазерной пушки, прикрепленной к корпусу">
             <p class="main-title slider-title">Порхает как бабочка, <br>жалит как пчела!</p>
             <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <table class="slider-specs specs-table">
@@ -115,17 +115,17 @@
         </ul>
         <ul class="slider-nav-list">
           <li class="slider-nav-item">
-            <button type="button">
+            <button class="slider-nav-button" type="button">
               <span class="visually-hidden">1 предложение</span>
             </button>
           </li>
           <li class="slider-nav-item">
-            <button type="button">
+            <button class="slider-nav-button" type="button">
               <span class="visually-hidden">2 предложение</span>
             </button>
           </li>
           <li class="slider-nav-item">
-            <button type="button">
+            <button class="slider-nav-button" type="button">
               <span class="visually-hidden">3 предложение</span>
             </button>
           </li>
@@ -138,7 +138,7 @@
             <a class="category-link category-link-vr" href="catalog.html">Виртуальная реальность</a>
           </li>
           <li class="category-item">
-            <a class="category-link category-link-monopod" href="catalog.html">Моноподы для селфи</a>
+            <a class="category-link category-link-monopod" href="catalog.html">Моноподы для&nbsp;селфи</a>
           </li>
           <li class="category-item"> 
             <a class="category-link category-link-actioncam" href="catalog.html">Экшн-камеры</a>
@@ -155,7 +155,7 @@
         </ul>
       </section>
       <section class="services">
-        <div class="container">
+        <div class="container services-grid">
           <h2 class="visually-hidden">Наши сервисы</h2>
           <ul class="services-list">
             <li class="services-item services-item-delivery">
@@ -172,7 +172,7 @@
             </li>
           </ul>
           <ul class="services-nav-list">
-            <li class="services-nav-item">
+            <li class="services-nav-item services-nav-item-active">
               <button class="button services-button services-button-active" type="button">
                 <span class="button-text">Доставка</span>
               </button>
@@ -207,7 +207,7 @@
           </li>
         </ul>
       </section>
-      <div class="container">
+      <div class="container info-grid">
         <section class="info">
           <h2 class="section-title info-title">О нас</h2>
           <p class="section-text info-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -227,51 +227,57 @@
           <a class="contacts-map" href="#">
             <img src="img/map.jpg" width="560" height="222" alt="Карта проезда">
           </a>
-          <a class="button contacts-mail" href="#">
+          <a class="button info-link" href="#">
             <span class="button-text">Напишите нам</span>
           </a>
         </section>
       </div>
     </main>
     <footer class="page-footer footer">
-      <div class="container">
+      <div class="container footer-grid">
         <a class="logo footer-logo">
           <img src="img/logo-footer.svg" width="163" height="35" alt="Логотип магазина электроники «Девайс»">
         </a>
-        <a class="footer-link login footer-login" href="blank.html">Войти</a>
-        <!-- 
-        <a class="footer-link login footer-login" href="blank.html">Валентин Петухов</a>
-        <a class="footer-link logout footer-logout" href="blank.html">Выйти</a>
-        -->
-        <a class="footer-link compare footer-compare" href="blank.html">Сравнить</a>
-        <a class="footer-link card footer-card" href="blank.html">Корзина</a>
-        <ul class="nav-list footer-nav-list">
-          <li class="footer-nav-item"><a href="blank.html">Доставка</a></li>
-          <li class="footer-nav-item"><a href="blank.html">Гарантия</a></li>
-          <li class="footer-nav-item"><a href="blank.html">Контакты</a></li>
-        </ul>
-        <address class="footer-address">г. Москва, ул. Строителей, 15</address>
-        <a class="footer-tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-        <ul class="social-list">
-          <li class="social-list-item">
-            <a class="social-link social-link-facebook" href="https://www.facebook.com/">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a class="social-link social-link-instagram" href="https://www.instagram.com/">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a class="social-link social-link-twitter" href="https://twitter.com/">
-              <span class="visually-hidden">Твиттер</span>
-            </a>
-          </li>
-        </ul>
-        <a class="logo footer-author" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-          <img src="img/html-academy.svg" width="27" height="34" alt="Логотип HTML-академии">
-        </a>
+        <div class="footer-user-menu">
+          <a class="footer-link login footer-login" href="blank.html">Войти</a>
+          <!-- 
+          <a class="footer-link login footer-login" href="blank.html">Валентин Петухов</a>
+          <a class="footer-link logout footer-logout" href="blank.html">Выйти</a>
+          -->
+          <a class="footer-link compare footer-compare" href="blank.html">Сравнить</a>
+          <a class="footer-link card footer-card" href="blank.html">Корзина</a>
+        </div>
+        <div class="footer-nav">
+          <ul class="nav-list footer-nav-list">
+            <li class="footer-nav-item"><a href="blank.html">Доставка</a></li>
+            <li class="footer-nav-item"><a href="blank.html">Гарантия</a></li>
+            <li class="footer-nav-item"><a href="blank.html">Контакты</a></li>
+          </ul>
+          <address class="footer-address">г. Москва, ул. Строителей, 15</address>
+          <a class="footer-tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        </div>
+        <div class="footer-external-links">
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a class="social-link social-link-facebook" href="https://www.facebook.com/">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-link social-link-instagram" href="https://www.instagram.com/">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-link social-link-twitter" href="https://twitter.com/">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+          </ul>
+          <a class="footer-copy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+            <img src="img/html-academy.svg" width="27" height="34" alt="Логотип HTML-академии">
+          </a>
+        </div>
       </div>
     </footer>
     <!-- Попап с картой -->
@@ -293,7 +299,7 @@
             <input class="mail-input" type="email" name="mail-email" placeholder="email@example.com" required>
           </label>
           <label class="mail-label mail-label-text">Текст письма:
-            <textarea class="mail-input" name="mail-text" cols="30" rows="7" placeholder="В свободной форме"></textarea>
+            <textarea class="mail-input mail-input-text" name="mail-text" cols="30" rows="7" placeholder="В свободной форме"></textarea>
           </label>
           <button class="button mail-submit" type="submit">
             <span class="button-text">Отправить</span>
