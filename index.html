@@ -12,30 +12,35 @@
         <a class="logo header-logo">
           <img src="img/logo-header.svg" width="163" height="35" alt="Логотип магазина электроники «Девайс»">
         </a>
-        <form class="nav-search-form" action="#" method="GET">
-          <label> 
-            <span class="visually-hidden">Поиск по сайту</span>
-            <input class="nav-search-input" type="search" name="nav-search-input" placeholder="Поиск по сайту">
-            <button class="nav-search-button" type="submit">Найти</button>
-          </label>
-        </form>
-        <a class="header-link login header-login" href="blank.html">Войти</a>
-        <!-- 
-        <a class="header-link login header-login" href="blank.html">Валентин Петухов</a>
-        <a class="header-link logout header-logout" href="blank.html">Выйти</a>
-        -->
-        <a class="header-link compare header-compare" href="blank.html">Сравнить</a>
-        <a class="header-link card header-card" href="blank.html">Корзина</a>
+        <div class="user-menu header-user-menu">
+            <form class="nav-search-form" action="#" method="GET">
+              <label> 
+              <span class="visually-hidden">Поиск по сайту</span>
+              <input class="nav-search-input" type="search" name="nav-search-input" placeholder="Поиск по сайту">
+              <button class="nav-search-button" type="submit">Найти</button>
+            </label>
+          </form>
+          <a class="header-link login header-login" href="blank.html">Войти</a>
+          <!-- 
+          <div class="login-wrap header-login-wrap">  
+            <a class="header-link login header-login" href="blank.html">Валентин Петухов</a>
+            <a class="header-link logout header-logout" href="blank.html">Выйти</a>
+          </div>
+          -->
+          <a class="header-link compare header-compare" href="blank.html">Сравнить</a>
+          <a class="header-link card header-card" href="blank.html">Корзина</a>
+        </div>
         <ul class="nav-list header-nav-list">
           <li class="nav-item nav-item-catalog">
             <a class="nav-link nav-link-catalog" href="catalog.html">Катaлог товаров</a>
             <!-- Открытый выпадающий список, начало -->
-            <ul class="nav-catalog-list">
+            <ul class="nav-catalog-list nav-catalog-list-index">
               <li class="nav-catalog-item"><a href="catalog.html">Виртуальная реальность</a></li>
               <li class="nav-catalog-item"><a href="catalog.html">Моноподы для селфи</a></li>
               <li class="nav-catalog-item"><a href="catalog.html">Экшн-камеры</a></li>
               <li class="nav-catalog-item"><a href="catalog.html">Фитнес-браслеты</a></li>
               <li class="nav-catalog-item"><a href="catalog.html">Умные часы</a></li>
+              <br>
               <li class="nav-catalog-item"><a href="catalog.html">Квадрокоптер</a></li>
             </ul>
             <!-- Открытый выпадающий список, конец -->
@@ -55,62 +60,68 @@
           <li class="slider-item">
             <h3 class="visually-hidden">Самая длинная селфи-палка</h3>
             <img class="slider-image" src="img/slider-1.png" width="384" height="486" alt="Чёрная телескопическая селфи-палка">
-            <p class="main-title slider-title">Делай селфи, <br>как Бен Стиллер!</p>
-            <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <table class="slider-specs specs-table">
-              <tr class="specs-row specs-row-param">
-                <td>Длина палки</td>
-                <td>Вес палки</td>
-                <td>Материал</td>
-              </tr>
-              <tr class="specs-row specs-row-value">
-                <td>8,5 м</td>
-                <td>5 кг</td>
-                <td>Карбон</td>
-              </tr>
-            </table>
-            <a class="button slider-link" href="blank.html">
-              <span class="button-text">Подробнее</span>
-            </a>
+            <div class="slider-content">
+              <p class="main-title slider-title">Делай селфи, <br>как Бен Стиллер!</p>
+              <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <table class="slider-specs specs-table">
+                <tr class="specs-row specs-row-param">
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
+                </tr>
+                <tr class="specs-row specs-row-value">
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+              </table>
+              <a class="button slider-link" href="blank.html">
+                <span class="button-text">Подробнее</span>
+              </a>
+            </div>
           </li>
           <!-- Слайд 2 -->
           <li class="slider-item">
             <h3 class="visually-hidden">Фитнесс-браслет</h3>
             <img class="slider-image" src="img/slider-2.png" width="345" height="485" alt="Чёрный фитнесс-браслет с надписью на экране: «Я вижу, что ты снова ешь».">
-            <p class="main-title slider-title">Худеем <br>правильно!</p>
-            <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы  
-              не пропускать занятия и соблюдать диету.</p>
-            <table class="slider-specs specs-table">
-              <tr class="specs-row specs-row-param">
-                <td>Без подзарядки</td>
-              </tr>
-              <tr class="specs-row specs-row-value">
-                <td>48 часов</td>
-              </tr>
-            </table>
-            <a class="button slider-link" href="blank.html">
-              <span class="button-text">Подробнее</span>
-            </a>
+            <div class="slider-content">
+              <p class="main-title slider-title">Худеем <br>правильно!</p>
+              <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы  
+                не пропускать занятия и соблюдать диету.</p>
+              <table class="slider-specs specs-table">
+                <tr class="specs-row specs-row-param">
+                  <td>Без подзарядки</td>
+                </tr>
+                <tr class="specs-row specs-row-value">
+                  <td>48 часов</td>
+                </tr>
+              </table>
+              <a class="button slider-link" href="blank.html">
+                <span class="button-text">Подробнее</span>
+              </a>
+            </div>
           </li>
           <!-- Слайд 3 -->
           <li class="slider-item">
             <h3 class="visually-hidden">Квадрокоптер с лазером</h3>
             <img class="slider-image" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер, стреляющий из лазерной пушки, прикрепленной к корпусу">
-            <p class="main-title slider-title">Порхает как бабочка, <br>жалит как пчела!</p>
-            <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <table class="slider-specs specs-table">
-              <tr class="specs-row specs-row-param">
-                <td>Дальность полета</td>
-                <td>Радиус поражения</td>
-              </tr>
-              <tr class="specs-row specs-row-value">
-                <td>800 м</td>
-                <td>50 м</td>
-              </tr>
-            </table>
-            <a class="button slider-link" href="blank.html">
-              <span class="button-text">Подробнее</span>
-            </a>
+            <div class="slider-content">
+              <p class="main-title slider-title">Порхает как бабочка, <br>жалит как пчела!</p>
+              <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <table class="slider-specs specs-table">
+                <tr class="specs-row specs-row-param">
+                  <td>Дальность полета</td>
+                  <td>Радиус поражения</td>
+                </tr>
+                <tr class="specs-row specs-row-value">
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+              </table>
+              <a class="button slider-link" href="blank.html">
+                <span class="button-text">Подробнее</span>
+              </a>
+            </div>
           </li>
         </ul>
         <ul class="slider-nav-list">
@@ -208,7 +219,7 @@
         </ul>
       </section>
       <div class="container info-grid">
-        <section class="info">
+        <section class="info info-about">
           <h2 class="section-title info-title">О нас</h2>
           <p class="section-text info-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p class="info-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
@@ -221,7 +232,7 @@
             <span class="button-text">Подробнее о нас</span>
           </a>
         </section>
-        <section class="contacts">
+        <section class="info info-contacts">
           <h2 class="section-title contacts-title">Контакты</h2>
           <p class="section-text contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <a class="contacts-map" href="#">
@@ -241,8 +252,8 @@
         <div class="footer-user-menu">
           <a class="footer-link login footer-login" href="blank.html">Войти</a>
           <!-- 
-          <a class="footer-link login footer-login" href="blank.html">Валентин Петухов</a>
-          <a class="footer-link logout footer-logout" href="blank.html">Выйти</a>
+          <a class="header-link login header-login" href="blank.html">Валентин Петухов</a>
+          <a class="header-link logout header-logout" href="blank.html">Выйти</a>
           -->
           <a class="footer-link compare footer-compare" href="blank.html">Сравнить</a>
           <a class="footer-link card footer-card" href="blank.html">Корзина</a>
@@ -258,17 +269,17 @@
         </div>
         <div class="footer-external-links">
           <ul class="social-list">
-            <li class="social-list-item">
+            <li class="social-item">
               <a class="social-link social-link-facebook" href="https://www.facebook.com/">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
-            <li class="social-list-item">
+            <li class="social-item">
               <a class="social-link social-link-instagram" href="https://www.instagram.com/">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
-            <li class="social-list-item">
+            <li class="social-item">
               <a class="social-link social-link-twitter" href="https://twitter.com/">
                 <span class="visually-hidden">Твиттер</span>
               </a>
