@@ -7,39 +7,51 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header class="page-header header header-expanded container">
+    <header class="page-header header container">
       <nav class="site-nav">
         <a class="logo header-logo">
           <img src="img/logo-header.svg" width="163" height="35" alt="Логотип магазина электроники «Девайс»">
         </a>
         <div class="user-menu header-user-menu">
-            <form class="nav-search-form" action="#" method="GET">
-              <label for="nav-search-input"> 
-                <span class="visually-hidden">Поиск по сайту</span>
-              </label>
-              <input class="nav-search-input" id="nav-search-input" type="search" name="nav-search-input" placeholder="Поиск по сайту">
-              <button class="nav-search-button" type="submit">Найти</button>
-            </form>
+          <form class="nav-search-form" action="#" method="GET">
+            <label for="nav-search-input"> 
+              <span class="visually-hidden">Поиск по сайту</span>
+            </label>
+            <input class="nav-search-input" id="nav-search-input" type="search" name="nav-search-input" placeholder="Поиск по сайту">
+            <button class="nav-search-button" type="submit">Найти</button>
+          </form>
           <a class="header-link login header-login" href="blank.html">Войти</a>
           <!-- 
           <a class="header-link login header-login" href="blank.html">Валентин Петухов</a>
           <a class="header-link logout header-logout" href="blank.html">Выйти</a>
           -->
           <a class="header-link compare header-compare" href="blank.html">Сравнить</a>
-          <a class="header-link card header-card" href="blank.html">Корзина</a>
+          <a class="header-link cart header-cart" href="blank.html">Корзина</a>
         </div>
-        <ul class="nav-list header-nav-list">
+        <ul class="nav-list header-nav-list nav-list-expanded">
           <li class="nav-item nav-item-catalog">
             <a class="nav-link nav-link-catalog" href="catalog.html">Катaлог товаров</a>
             <!-- Открытый выпадающий список, начало -->
             <ul class="nav-catalog-list nav-catalog-list-index">
-              <li class="nav-catalog-item"><a href="catalog.html">Виртуальная реальность</a></li>
-              <li class="nav-catalog-item"><a href="catalog.html">Моноподы для селфи</a></li>
-              <li class="nav-catalog-item"><a href="catalog.html">Экшн-камеры</a></li>
-              <li class="nav-catalog-item"><a href="catalog.html">Фитнес-браслеты</a></li>
-              <li class="nav-catalog-item"><a href="catalog.html">Умные часы</a></li>
+              <li class="nav-catalog-item">
+                <a class="nav-catalog-link" href="catalog.html">Виртуальная реальность</a>
+              </li>
+              <li class="nav-catalog-item">
+                <a class="nav-catalog-link" href="catalog.html">Моноподы для селфи</a>
+              </li>
+              <li class="nav-catalog-item">
+                <a class="nav-catalog-link" href="catalog.html">Экшн-камеры</a>
+              </li>
+              <li class="nav-catalog-item">
+                <a class="nav-catalog-link" href="catalog.html">Фитнес-браслеты</a>
+              </li>
+              <li class="nav-catalog-item">
+                <a class="nav-catalog-link" href="catalog.html">Умные часы</a>
+              </li>
               <br>
-              <li class="nav-catalog-item"><a href="catalog.html">Квадрокоптер</a></li>
+              <li class="nav-catalog-item">
+                <a class="nav-catalog-link" href="catalog.html">Квадрокоптер</a>
+              </li>
             </ul>
             <!-- Открытый выпадающий список, конец -->
           </li>
@@ -55,22 +67,25 @@
         <h2 class="visually-hidden">Лучшие предложения</h2>
         <ul class="slider-list">
           <!-- Слайд 1 -->
-          <li class="slider-item">
+          <li class="slider-item slider-item-current">
             <h3 class="visually-hidden">Самая длинная селфи-палка</h3>
             <img class="slider-image" src="img/slider-1.png" width="384" height="486" alt="Чёрная телескопическая селфи-палка">
             <div class="slider-content">
               <p class="main-title slider-title">Делай селфи, <br>как Бен Стиллер!</p>
-              <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. 
+                <br>
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+              </p>
               <table class="slider-specs specs-table">
                 <tr class="specs-row specs-row-param">
-                  <td>Длина палки</td>
-                  <td>Вес палки</td>
-                  <td>Материал</td>
+                  <td class="specs-cell specs-cell-param">Длина палки</td>
+                  <td class="specs-cell specs-cell-param">Вес палки</td>
+                  <td class="specs-cell specs-cell-param">Материал</td>
                 </tr>
                 <tr class="specs-row specs-row-value">
-                  <td>8,5 м</td>
-                  <td>5 кг</td>
-                  <td>Карбон</td>
+                  <td class="specs-cell specs-cell-value">8,5 м</td>
+                  <td class="specs-cell specs-cell-value">5 кг</td>
+                  <td class="specs-cell specs-cell-value">Карбон</td>
                 </tr>
               </table>
               <a class="button slider-link" href="blank.html">
@@ -124,7 +139,7 @@
         </ul>
         <ul class="slider-nav-list">
           <li class="slider-nav-item">
-            <button class="slider-nav-button" type="button">
+            <button class="slider-nav-button slider-nav-button-current" type="button">
               <span class="visually-hidden">1 предложение</span>
             </button>
           </li>
@@ -153,10 +168,10 @@
             <a class="category-link category-link-actioncam" href="catalog.html">Экшн-камеры</a>
           </li>
           <li class="category-item">
-            <a class="category-link category-link-watch" href="catalog.html">Умные часы</a>
+            <a class="category-link category-link-band" href="catalog.html">Фитнес&shy;браслеты</a>
           </li>
           <li class="category-item">
-            <a class="category-link category-link-band" href="catalog.html">Фитнес-браслеты</a>
+            <a class="category-link category-link-watch" href="catalog.html">Умные часы</a>
           </li>
           <li class="category-item">
             <a class="category-link category-link-copter" href="catalog.html">Квадрокоптеры</a>
@@ -167,22 +182,28 @@
         <div class="container services-grid">
           <h2 class="visually-hidden">Наши сервисы</h2>
           <ul class="services-list">
-            <li class="services-item services-item-delivery">
+            <li class="services-item services-item-delivery services-item-current">
               <h3 class="section-title services-title">Доставка</h3>
-              <p class="services-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              <p class="services-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+              <br> 
+              заработаем, поднимая его на ваш этаж.</p>
             </li>
             <li class="services-item services-item-warranty">
               <h3 class="section-title services-title">Гарантия</h3>
-              <p class="services-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              <p class="services-text">Если из-за&nbsp;возгорания купленного у&nbsp;нас товара у&nbsp;вас сгорит дом&nbsp;— не&nbsp;переживайте, мы&nbsp;выдадим вам новый. 
+              <br>
+              Товар, не&nbsp;дом, конечно&nbsp;же.</p>
             </li>
             <li class="services-item services-item-credit">
               <h3 class="section-title services-title">Кредит</h3>
-              <p class="services-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+              <p class="services-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+              <br> 
+              условия кредита. Выгодные для нашего банка, разумеется.</p>
             </li>
           </ul>
           <ul class="services-nav-list">
-            <li class="services-nav-item services-nav-item-active">
-              <button class="button services-button services-button-active" type="button">
+            <li class="services-nav-item services-nav-item-current">
+              <button class="button services-button services-button-current" type="button">
                 <span class="button-text">Доставка</span>
               </button>
             </li>
@@ -219,8 +240,8 @@
       <div class="container info-grid">
         <section class="info info-about">
           <h2 class="section-title info-title">О нас</h2>
-          <p class="section-text info-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p class="info-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <p class="info-text info-about-text">Огромный выбор гаджетов не&nbsp;оставит равнодушным гика, который&nbsp;есть в&nbsp;каждом из&nbsp;нас.</p>
+          <p class="info-text info-about-text">Мы можем доставить ваш товар в&nbsp;самые отдаленные точки России! DEVICE работает со&nbsp;многими транспортными компаниями:</p>
           <ul class="info-list">
             <li class="info-item">Деловые линии</li>
             <li class="info-item">Автотрейдинг</li>
@@ -231,8 +252,8 @@
           </a>
         </section>
         <section class="info info-contacts">
-          <h2 class="section-title contacts-title">Контакты</h2>
-          <p class="section-text contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <h2 class="section-title info-title">Контакты</h2>
+          <p class="info-text info-contacts-text">Вы можете забрать товар сами, заехав в&nbsp;наш&nbsp;офис. Заодно, вы&nbsp;сможете проверить работоспособность покупки. Всякое&nbsp;бывает.</p>
           <a class="contacts-map" href="#">
             <img src="img/map.jpg" width="560" height="222" alt="Карта проезда">
           </a>
@@ -241,6 +262,39 @@
           </a>
         </section>
       </div>
+      <!-- Попап с картой -->
+      <div class="modal modal-map hidden">
+        <img class="modal-map-image" src="img/map-big.jpg" width="960" height="556" alt="Карта проезда">
+        <button class="button-close button-close-map" type=button>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
+      <!-- Попап формы связи -->
+      <section class="modal modal-mail hidden">
+        <div class="mail-container">
+          <h3 class="visually-hidden">Форма обратной связи</h3>
+          <form class="mail-form" action="#" method="POST">
+            <label class="mail-label mail-label-name">
+              <span class="mail-label-text">Ваше имя:</span> 
+              <input class="mail-input" type="text" name="mail-name" placeholder="Имя Фамилия" required>
+            </label>
+            <label class="mail-label mail-label-email">
+              <span class="mail-label-text">Ваш e-mail:</span> 
+              <input class="mail-input" type="email" name="mail-email" placeholder="email@example.com" required>
+            </label>
+            <label class="mail-label mail-label-message">
+              <span class="mail-label-text">Текст письма:</span>
+              <textarea class="mail-input mail-input-message" name="mail-message" cols="30" rows="7" placeholder="В свободной форме"></textarea>
+            </label>
+            <button class="button mail-submit" type="submit">
+              <span class="button-text">Отправить</span>
+            </button>
+          </form>
+          <button class="button-close button-close-mail" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
+      </section>
     </main>
     <footer class="page-footer footer">
       <div class="container footer-grid">
@@ -254,13 +308,13 @@
           <a class="header-link logout header-logout" href="blank.html">Выйти</a>
           -->
           <a class="footer-link compare footer-compare" href="blank.html">Сравнить</a>
-          <a class="footer-link card footer-card" href="blank.html">Корзина</a>
+          <a class="footer-link cart footer-cart" href="blank.html">Корзина</a>
         </div>
         <div class="footer-nav">
           <ul class="nav-list footer-nav-list">
-            <li class="footer-nav-item"><a href="blank.html">Доставка</a></li>
-            <li class="footer-nav-item"><a href="blank.html">Гарантия</a></li>
-            <li class="footer-nav-item"><a href="blank.html">Контакты</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="blank.html">Доставка</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="blank.html">Гарантия</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="blank.html">Контакты</a></li>
           </ul>
           <address class="footer-address">г. Москва, ул. Строителей, 15</address>
           <a class="footer-tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
@@ -289,35 +343,5 @@
         </div>
       </div>
     </footer>
-    <!-- Попап с картой -->
-    <div class="modal modal-map">
-      <img src="img/map-big.jpg" width="994" height="593" alt="Карта проезда">
-      <button class="button-close button-close-map" type=button>
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-    </div>
-    <!-- Попап формы связи -->
-    <section class="modal modal-mail">
-      <div class="mail-container">
-        <h3 class="visually-hidden">Форма обратной связи</h3>
-        <form class="mail-form" action="#" method="POST">
-          <label class="mail-label mail-label-name">Ваше имя: 
-            <input class="mail-input" type="text" name="mail-name" placeholder="Имя Фамилия" required>
-          </label>
-          <label class="mail-label mail-label-email">Ваш e-mail: 
-            <input class="mail-input" type="email" name="mail-email" placeholder="email@example.com" required>
-          </label>
-          <label class="mail-label mail-label-text">Текст письма:
-            <textarea class="mail-input mail-input-text" name="mail-text" cols="30" rows="7" placeholder="В свободной форме"></textarea>
-          </label>
-          <button class="button mail-submit" type="submit">
-            <span class="button-text">Отправить</span>
-          </button>
-        </form>
-        <button class="button-close button-close-mail" type="button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-      </div>
-    </section>
   </body>
 </html>
