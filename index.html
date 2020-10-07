@@ -32,7 +32,7 @@
           <li class="nav-item nav-item-catalog">
             <a class="nav-link nav-link-catalog" href="catalog.html">Катaлог товаров</a>
             <!-- Открытый выпадающий список, начало -->
-            <ul class="nav-catalog-list nav-catalog-list-index">
+            <ul class="nav-catalog-list">
               <li class="nav-catalog-item">
                 <a class="nav-catalog-link" href="catalog.html">Виртуальная реальность</a>
               </li>
@@ -262,39 +262,6 @@
           </a>
         </section>
       </div>
-      <!-- Попап с картой -->
-      <div class="modal modal-map hidden">
-        <img class="modal-map-image" src="img/map-big.jpg" width="960" height="556" alt="Карта проезда">
-        <button class="button-close button-close-map" type=button>
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-      </div>
-      <!-- Попап формы связи -->
-      <section class="modal modal-mail hidden">
-        <div class="mail-container">
-          <h3 class="visually-hidden">Форма обратной связи</h3>
-          <form class="mail-form" action="#" method="POST">
-            <label class="mail-label mail-label-name">
-              <span class="mail-label-text">Ваше имя:</span> 
-              <input class="mail-input" type="text" name="mail-name" placeholder="Имя Фамилия" required>
-            </label>
-            <label class="mail-label mail-label-email">
-              <span class="mail-label-text">Ваш e-mail:</span> 
-              <input class="mail-input" type="email" name="mail-email" placeholder="email@example.com" required>
-            </label>
-            <label class="mail-label mail-label-message">
-              <span class="mail-label-text">Текст письма:</span>
-              <textarea class="mail-input mail-input-message" name="mail-message" cols="30" rows="7" placeholder="В свободной форме"></textarea>
-            </label>
-            <button class="button mail-submit" type="submit">
-              <span class="button-text">Отправить</span>
-            </button>
-          </form>
-          <button class="button-close button-close-mail" type="button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
-        </div>
-      </section>
     </main>
     <footer class="page-footer footer">
       <div class="container footer-grid">
@@ -343,5 +310,38 @@
         </div>
       </div>
     </footer>
+    <!-- Попап с картой -->
+    <div class="modal modal-map hidden">
+      <img class="modal-map-image" src="img/map-big.jpg" width="960" height="556" alt="Карта проезда">
+      <button class="button-close button-close-map" type=button>
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </div>
+    <!-- Попап формы связи -->
+    <section class="modal modal-mail hidden">
+      <div class="mail-container">
+        <h3 class="visually-hidden">Форма обратной связи</h3>
+        <form class="mail-form" action="#" method="POST">
+          <label class="mail-label mail-label-name">
+            <span class="mail-label-text">Ваше имя:</span> 
+            <input class="mail-input" type="text" name="mail-name" placeholder="Имя Фамилия" required>
+          </label>
+          <label class="mail-label mail-label-email">
+            <span class="mail-label-text">Ваш e-mail:</span> 
+            <input class="mail-input" type="email" name="mail-email" placeholder="email@example.com" required>
+          </label>
+          <label class="mail-label mail-label-message">
+            <span class="mail-label-text">Текст письма:</span>
+            <textarea class="mail-input mail-input-message" name="mail-message" cols="30" rows="7" placeholder="В свободной форме"></textarea>
+          </label>
+          <button class="button mail-submit" type="submit">
+            <span class="button-text">Отправить</span>
+          </button>
+        </form>
+        <button class="button-close button-close-mail" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
+    </section>
   </body>
 </html>

@@ -77,16 +77,21 @@
             <form class="filters-form" action="https://echo.htmlacademy.ru/" method="GET">
               <fieldset class="filters-fieldset filters-fieldset-price">
                 <legend class="filters-legend filters-legend-price">Стоимость</legend>
-                <label class="filters-label">
-                  <span class="visually-hidden">Минимальная стоимость</span>
-                  <input id="filters-min-price" class="price-input" type="range" name="filters-min-price" min="0" max="10000" value="0" step="any">
-                </label>
-                <output class="price-output" for="filters-min-price">от 0</output>
-                <label class="filters-label">
-                  <span class="visually-hidden">Максимальная стоимость</span>
-                  <input id="filters-max-price" class="price-input" type="range" name="filters-max-price" min="0" max="10000" value="5000" step="any">
-                </label>
-                <output class="price-output" for="filters-max-price">до 5000</output>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 0; width: 50%"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style="left: 0"></div>
+                  <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="filters-label price-label" style="left: 0">
+                    от <input class="price-input" type="number" name="filters-min-price" value="0">
+                  </label>
+                  <label class="filters-label price-label" style="left: 50%">
+                    до <input class="price-input" type="number" name="filters-max-price" value="5000">
+                  </label>
+                </div>
               </fieldset>
               <fieldset class="filters-fieldset filters-fieldset-color">
                 <legend class="filters-legend filters-legend-color">Цвет</legend>
@@ -111,13 +116,13 @@
                   </li>
                   <li class="color-item">
                     <label class="filters-label filters-label-color">
-                      <input class="color-input" type="checkbox" name="filters-color" value="red" checked> 
+                      <input class="color-input" type="checkbox" name="filters-color" value="red" disabled> 
                       <span class="label-text">Красный</span>
                     </label>
                   </li>
                   <li class="color-item">
                     <label class="filters-label filters-label-color">
-                      <input class="color-input" type="checkbox" name="filters-color" value="pink" disabled> 
+                      <input class="color-input" type="checkbox" name="filters-color" value="pink" checked disabled> 
                       <span class="label-text">Розовый</span>
                     </label>
                   </li>
@@ -128,7 +133,7 @@
                 <ul class="filters-list filters-list-bluetooth">
                   <li class="bluetooth-item">
                     <label class="filters-label filters-label-bluetooth">
-                      <input class="bluetooth-input" type="radio" name="filters-bluetooth" value="yes" checked> 
+                      <input class="bluetooth-input" type="radio" name="filters-bluetooth" value="yes"> 
                       <span class="label-text">Есть</span>
                     </label>
                   </li>
@@ -270,9 +275,9 @@
         </div>
         <div class="footer-nav">
           <ul class="nav-list footer-nav-list">
-            <li class="footer-nav-item"><a href="blank.html">Доставка</a></li>
-            <li class="footer-nav-item"><a href="blank.html">Гарантия</a></li>
-            <li class="footer-nav-item"><a href="blank.html">Контакты</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="blank.html">Доставка</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="blank.html">Гарантия</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="blank.html">Контакты</a></li>
           </ul>
           <address class="footer-address">г. Москва, ул. Строителей, 15</address>
           <a class="footer-tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
