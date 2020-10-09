@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин электроники «Девайс». Главная страница</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
   </head>
   <body class="page-body">
     <header class="page-header header container">
@@ -13,18 +12,20 @@
           <img src="img/logo-header.svg" width="163" height="35" alt="Логотип магазина электроники «Девайс»">
         </a>
         <div class="user-menu header-user-menu">
-          <form class="nav-search-form" action="#" method="GET">
+          <form class="nav-search-form" action="https://echo.htmlacademy.ru/" method="GET">
             <label for="nav-search-input"> 
               <span class="visually-hidden">Поиск по сайту</span>
             </label>
             <input class="nav-search-input" id="nav-search-input" type="search" name="nav-search-input" placeholder="Поиск по сайту">
             <button class="nav-search-button" type="submit">Найти</button>
           </form>
-          <a class="header-link login header-login" href="blank.html">Войти</a>
-          <!-- 
-          <a class="header-link login header-login" href="blank.html">Валентин Петухов</a>
-          <a class="header-link logout header-logout" href="blank.html">Выйти</a>
-          -->
+          <div class="header-login-wrap">
+            <a class="header-link login header-login" href="blank.html">Войти</a>
+            <!-- 
+            <a class="header-link login header-login" href="blank.html">Валентин Петухов</a>
+            <a class="header-link logout header-logout" href="blank.html">Выйти</a>
+            -->
+          </div>
           <a class="header-link compare header-compare" href="blank.html">Сравнить</a>
           <a class="header-link cart header-cart" href="blank.html">Корзина</a>
         </div>
@@ -37,7 +38,7 @@
                 <a class="nav-catalog-link" href="catalog.html">Виртуальная реальность</a>
               </li>
               <li class="nav-catalog-item">
-                <a class="nav-catalog-link" href="catalog.html">Моноподы для селфи</a>
+                <a class="nav-catalog-link" href="catalog.html">Моноподы для&nbsp;селфи</a>
               </li>
               <li class="nav-catalog-item">
                 <a class="nav-catalog-link" href="catalog.html">Экшн-камеры</a>
@@ -71,10 +72,10 @@
             <h3 class="visually-hidden">Самая длинная селфи-палка</h3>
             <img class="slider-image" src="img/slider-1.png" width="384" height="486" alt="Чёрная телескопическая селфи-палка">
             <div class="slider-content">
-              <p class="main-title slider-title">Делай селфи, <br>как Бен Стиллер!</p>
-              <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. 
+              <p class="main-title slider-title">Делай селфи, <br>как&nbsp;Бен&nbsp;Стиллер!</p>
+              <p class="slider-text">Самая длинная палка для&nbsp;селфи доступна в&nbsp;нашем магазине. 
                 <br>
-                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                Восемь (Восемь, Карл!) метров длиной и&nbsp;весом всего 5&nbsp;килограмм.
               </p>
               <table class="slider-specs specs-table">
                 <tr class="specs-row specs-row-param">
@@ -83,8 +84,8 @@
                   <td class="specs-cell specs-cell-param">Материал</td>
                 </tr>
                 <tr class="specs-row specs-row-value">
-                  <td class="specs-cell specs-cell-value">8,5 м</td>
-                  <td class="specs-cell specs-cell-value">5 кг</td>
+                  <td class="specs-cell specs-cell-value">8,5&nbsp;м</td>
+                  <td class="specs-cell specs-cell-value">5&nbsp;кг</td>
                   <td class="specs-cell specs-cell-value">Карбон</td>
                 </tr>
               </table>
@@ -96,17 +97,17 @@
           <!-- Слайд 2 -->
           <li class="slider-item">
             <h3 class="visually-hidden">Фитнесс-браслет</h3>
-            <img class="slider-image" src="img/slider-2.png" width="345" height="485" alt="Чёрный фитнесс-браслет с надписью на экране: «Я вижу, что ты снова ешь».">
+            <img class="slider-image" src="img/slider-2.png" width="345" height="485" alt="Чёрный фитнес-браслет с надписью на экране: «Я вижу, что ты снова ешь».">
             <div class="slider-content">
               <p class="main-title slider-title">Худеем <br>правильно!</p>
-              <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы  
-                не пропускать занятия и соблюдать диету.</p>
+              <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в&nbsp;себе силы  
+                не&nbsp;пропускать занятия и&nbsp;соблюдать диету.</p>
               <table class="slider-specs specs-table">
                 <tr class="specs-row specs-row-param">
-                  <td>Без подзарядки</td>
+                  <td class="specs-cell specs-cell-param">Без подзарядки</td>
                 </tr>
                 <tr class="specs-row specs-row-value">
-                  <td>48 часов</td>
+                  <td class="specs-cell specs-cell-value">48&nbsp;часов</td>
                 </tr>
               </table>
               <a class="button slider-link" href="blank.html">
@@ -119,16 +120,16 @@
             <h3 class="visually-hidden">Квадрокоптер с лазером</h3>
             <img class="slider-image" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер, стреляющий из лазерной пушки, прикрепленной к корпусу">
             <div class="slider-content">
-              <p class="main-title slider-title">Порхает как бабочка, <br>жалит как пчела!</p>
-              <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <p class="main-title slider-title">Порхает как&nbsp;бабочка, <br>жалит как&nbsp;пчела!</p>
+              <p class="slider-text">Этот обычный, на&nbsp;первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под&nbsp;стандартную камеру.</p>
               <table class="slider-specs specs-table">
                 <tr class="specs-row specs-row-param">
-                  <td>Дальность полета</td>
-                  <td>Радиус поражения</td>
+                  <td class="specs-cell specs-cell-param">Дальность полета</td>
+                  <td class="specs-cell specs-cell-param">Радиус поражения</td>
                 </tr>
                 <tr class="specs-row specs-row-value">
-                  <td>800 м</td>
-                  <td>50 м</td>
+                  <td class="specs-cell specs-cell-value">800&nbsp;м</td>
+                  <td class="specs-cell specs-cell-value">50&nbsp;м</td>
                 </tr>
               </table>
               <a class="button slider-link" href="blank.html">
@@ -168,7 +169,7 @@
             <a class="category-link category-link-actioncam" href="catalog.html">Экшн-камеры</a>
           </li>
           <li class="category-item">
-            <a class="category-link category-link-band" href="catalog.html">Фитнес&shy;браслеты</a>
+            <a class="category-link category-link-band" href="catalog.html">Фитнес-браслеты</a>
           </li>
           <li class="category-item">
             <a class="category-link category-link-watch" href="catalog.html">Умные часы</a>
@@ -184,9 +185,7 @@
           <ul class="services-list">
             <li class="services-item services-item-delivery services-item-current">
               <h3 class="section-title services-title">Доставка</h3>
-              <p class="services-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-              <br> 
-              заработаем, поднимая его на ваш этаж.</p>
+              <p class="services-text">Мы с&nbsp;удовольствием доставим ваш&nbsp;товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь&nbsp;мы неплохо заработаем, поднимая его на&nbsp;ваш&nbsp;этаж.</p>
             </li>
             <li class="services-item services-item-warranty">
               <h3 class="section-title services-title">Гарантия</h3>
@@ -196,9 +195,7 @@
             </li>
             <li class="services-item services-item-credit">
               <h3 class="section-title services-title">Кредит</h3>
-              <p class="services-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-              <br> 
-              условия кредита. Выгодные для нашего банка, разумеется.</p>
+              <p class="services-text">Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты подберут для&nbsp;вас наиболее выгодные условия кредита. Выгодные для&nbsp;нашего банка, разумеется.</p>
             </li>
           </ul>
           <ul class="services-nav-list">
@@ -240,7 +237,9 @@
       <div class="container info-grid">
         <section class="info info-about">
           <h2 class="section-title info-title">О нас</h2>
-          <p class="info-text info-about-text">Огромный выбор гаджетов не&nbsp;оставит равнодушным гика, который&nbsp;есть в&nbsp;каждом из&nbsp;нас.</p>
+          <p class="info-text info-about-text">Огромный выбор гаджетов не&nbsp;оставит равнодушным гика,
+            <br>который&nbsp;есть в&nbsp;каждом из&nbsp;нас.
+          </p>
           <p class="info-text info-about-text">Мы можем доставить ваш товар в&nbsp;самые отдаленные точки России! DEVICE работает со&nbsp;многими транспортными компаниями:</p>
           <ul class="info-list">
             <li class="info-item">Деловые линии</li>
@@ -248,7 +247,7 @@
             <li class="info-item">ЖелДорЭкспедиция</li>
           </ul>
           <a class="button info-link" href="blank.html">
-            <span class="button-text">Подробнее о нас</span>
+            <span class="button-text">Подробнее о&nbsp;нас</span>
           </a>
         </section>
         <section class="info info-contacts">
@@ -321,7 +320,7 @@
     <section class="modal modal-mail hidden">
       <div class="mail-container">
         <h3 class="visually-hidden">Форма обратной связи</h3>
-        <form class="mail-form" action="#" method="POST">
+        <form class="mail-form" action="https://echo.htmlacademy.ru/" method="POST" target="_blank">
           <label class="mail-label mail-label-name">
             <span class="mail-label-text">Ваше имя:</span> 
             <input class="mail-input" type="text" name="mail-name" placeholder="Имя Фамилия" required>
