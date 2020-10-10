@@ -1581,8 +1581,10 @@ background-image: linear-gradient(var(--accent), var(--accent));
 .price-input {
   max-width: 8ch;
   border: none;
-  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
   line-height: inherit;
+  background-color: transparent;
 }
 
 /* Color filter */
@@ -1617,7 +1619,7 @@ input[type="radio"] {
   padding: 0;
   overflow: hidden;
   border: 0;
-  clip: rect(0 0 0 0)
+  clip: rect(0 0 0 0);
 }
 
 input[type="checkbox"] + .label-text,
