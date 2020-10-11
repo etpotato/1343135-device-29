@@ -20,13 +20,13 @@
             <button class="nav-search-button" type="submit">Найти</button>
           </form>
           <div class="header-login-wrap">
-            <a class="header-link login header-login" href="blank.html">Валентин Петухов</a>
-            <a class="header-link logout header-logout" href="blank.html">Выйти</a>
+            <a class="header-link login header-login" href="blank.html" aria-label="Страница личного профиля. Валентин Петухов">Валентин Петухов</a>
+            <a class="header-link logout header-logout" href="blank.html" aria-label="Выйти из личного профиля">Выйти</a>
             <!-- 
-            <a class="header-link login header-login" href="blank.html">Войти</a>
+            <a class="header-link login header-login" href="blank.html" aria-label="Войти в личный профиль">Войти</a>
             -->
           </div>
-          <a class="header-link compare header-compare" href="blank.html">Сравнить</a>
+          <a class="header-link compare header-compare" href="blank.html" aria-label="Открыть список сравнения">Сравнить</a>
           <a class="header-link cart header-cart" href="blank.html">Корзина</a>
         </div>
         <ul class="nav-list header-nav-list">
@@ -189,7 +189,7 @@
                   <p class="card-price">500 руб.</p>
                 </div>
                 <div class="card-buttons">
-                  <a class="button card-buy" href="blank.html">
+                  <a class="button card-buy" href="blank.html" aria-label="Добавить товар в корзину">
                     <span class="button-text">В корзину</span>
                   </a>
                   <a class="card-compare" href="blank.html">Добавить к сравнению</a>
@@ -204,7 +204,7 @@
                   <p class="card-price">1 500 руб.</p>
                 </div>
                 <div class="card-buttons">
-                  <a class="button card-buy" href="blank.html">
+                  <a class="button card-buy" href="blank.html" aria-label="Добавить товар в корзину">
                     <span class="button-text">В корзину</span>
                   </a>
                   <a class="card-compare" href="blank.html">Добавить к сравнению</a>
@@ -219,7 +219,7 @@
                   <p class="card-price">2&nbsp;500 руб.</p>
                 </div>
                 <div class="card-buttons">
-                  <a class="button card-buy" href="blank.html">
+                  <a class="button card-buy" href="blank.html" aria-label="Добавить товар в корзину">
                     <span class="button-text">В корзину</span>
                   </a>
                   <a class="card-compare" href="blank.html">Добавить к сравнению</a>
@@ -234,7 +234,7 @@
                   <p class="card-price">4&nbsp;900 руб.</p>
                 </div>
                 <div class="card-buttons">
-                  <a class="button card-buy" href="blank.html">
+                  <a class="button card-buy" href="blank.html" aria-label="Добавить товар в корзину">
                     <span class="button-text">В корзину</span>
                   </a>
                   <a class="card-compare" href="blank.html">Добавить к сравнению</a>
@@ -244,17 +244,23 @@
             <div class="catalog-pagination">
               <ul class="catalog-pagination-list pagination-list">
                 <li class="pagination-item">
-                  <a class="pagination-link">1<span class="visually-hidden"> страница</span></a>
+                  <a class="pagination-link">1
+                    <span class="visually-hidden"> страница каталога</span>
+                  </a>
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-link" href="#">2<span class="visually-hidden"> страница</span></a>
+                  <a class="pagination-link" href="#">2
+                    <span class="visually-hidden"> страница каталога</span>
+                  </a>
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-link" href="#">3<span class="visually-hidden"> страница</span></a>
+                  <a class="pagination-link" href="#">3
+                    <span class="visually-hidden"> страница каталога</span>
+                  </a>
                 </li>
               </ul>
-              <a class="pagination-button pagination-button-backward">Назад</a>
-              <a class="pagination-button pagination-button-forward" href="#">Вперед</a>
+              <a class="pagination-button pagination-button-backward" aria-label="Предыдущая страница каталога">Назад</a>
+              <a class="pagination-button pagination-button-forward" href="#" aria-label="Следующая страница каталога">Вперед</a>
             </div>
           </section>
         </div>
@@ -266,12 +272,12 @@
           <img src="img/logo-footer.svg" width="163" height="35" alt="Логотип магазина электроники «Девайс»">
         </a>
         <div class="footer-user-menu">
-          <a class="footer-link login footer-login" href="blank.html">Валентин Петухов</a>
-          <a class="footer-link logout footer-logout" href="blank.html">Выйти</a>
+          <a class="footer-link login footer-login" href="blank.html" aria-label="Страница личного профиля. Валентин Петухов">Валентин Петухов</a>
+          <a class="footer-link logout footer-logout" href="blank.html" aria-label="Выйти из личного профиля">Выйти</a>
           <!-- 
-          <a class="footer-link login footer-login" href="blank.html">Войти</a>
+          <a class="footer-link login footer-login" href="blank.html" aria-label="Войти в личный профиль">Войти</a>
           -->
-          <a class="footer-link compare footer-compare" href="blank.html">Сравнить</a>
+          <a class="footer-link compare footer-compare" href="blank.html" aria-label="Открыть список сравнения">Сравнить</a>
           <a class="footer-link cart footer-cart" href="blank.html">Корзина</a>
         </div>
         <div class="footer-nav">
@@ -284,6 +290,7 @@
           <a class="footer-tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
         </div>
         <div class="footer-external-links">
+          <p class="visually-hidden">Мы в социальных сетях</p>
           <ul class="social-list">
             <li class="social-item">
               <a class="social-link social-link-facebook" href="https://www.facebook.com/">
@@ -302,7 +309,8 @@
             </li>
           </ul>
           <a class="footer-copy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-            <img src="img/html-academy.svg" width="27" height="34" alt="Логотип HTML-академии">
+            <span class="visually-hidden">Разработка сайта - HTML Академия</span>
+            <img src="img/html-academy.svg" width="27" height="34" alt="Логотип HTML Академии">
           </a>
         </div>
       </div>

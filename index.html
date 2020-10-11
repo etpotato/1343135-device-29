@@ -20,13 +20,13 @@
             <button class="nav-search-button" type="submit">Найти</button>
           </form>
           <div class="header-login-wrap">
-            <a class="header-link login header-login" href="blank.html">Войти</a>
+            <a class="header-link login header-login" href="blank.html" aria-label="Войти в личный профиль">Войти</a>
             <!-- 
-            <a class="header-link login header-login" href="blank.html">Валентин Петухов</a>
-            <a class="header-link logout header-logout" href="blank.html">Выйти</a>
+            <a class="header-link login header-login" href="blank.html" aria-label="Страница личного профиля. Валентин Петухов">Валентин Петухов</a>
+            <a class="header-link logout header-logout" href="blank.html" aria-label="Выйти из личного профиля">Выйти</a>
             -->
           </div>
-          <a class="header-link compare header-compare" href="blank.html">Сравнить</a>
+          <a class="header-link compare header-compare" href="blank.html" aria-label="Открыть список сравнения">Сравнить</a>
           <a class="header-link cart header-cart" href="blank.html">Корзина</a>
         </div>
         <ul class="nav-list header-nav-list nav-list-expanded">
@@ -200,17 +200,17 @@
           </ul>
           <ul class="services-nav-list">
             <li class="services-nav-item services-nav-item-current">
-              <button class="button services-button services-button-current" type="button">
+              <button class="button services-button services-button-current" type="button" aria-label="Показать информацию о доставке">
                 <span class="button-text">Доставка</span>
               </button>
             </li>
             <li class="services-nav-item">
-              <button class="button services-button" type="button">
+              <button class="button services-button" type="button" aria-label="Показать информацию о гарантии">
                 <span class="button-text">Гарантия</span>
               </button>
             </li>
             <li class="services-nav-item">
-              <button class="button services-button" type="button">
+              <button class="button services-button" type="button" aria-label="Показать информацию о кредите">
                 <span class="button-text">Кредит</span>
               </button>
             </li>
@@ -268,12 +268,12 @@
           <img src="img/logo-footer.svg" width="163" height="35" alt="Логотип магазина электроники «Девайс»">
         </a>
         <div class="footer-user-menu">
-          <a class="footer-link login footer-login" href="blank.html">Войти</a>
+          <a class="footer-link login footer-login" href="blank.html" aria-label="Войти в личный профиль">Войти</a>
           <!-- 
-          <a class="header-link login header-login" href="blank.html">Валентин Петухов</a>
-          <a class="header-link logout header-logout" href="blank.html">Выйти</a>
+          <a class="header-link login header-login" href="blank.html" aria-label="Страница личного профиля. Валентин Петухов">Валентин Петухов</a>
+          <a class="header-link logout header-logout" href="blank.html" aria-label="Выйти из личного профиля">Выйти</a>
           -->
-          <a class="footer-link compare footer-compare" href="blank.html">Сравнить</a>
+          <a class="footer-link compare footer-compare" href="blank.html" aria-label="Открыть список сравнения">Сравнить</a>
           <a class="footer-link cart footer-cart" href="blank.html">Корзина</a>
         </div>
         <div class="footer-nav">
@@ -286,6 +286,7 @@
           <a class="footer-tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
         </div>
         <div class="footer-external-links">
+          <p class="visually-hidden">Мы в социальных сетях</p>
           <ul class="social-list">
             <li class="social-item">
               <a class="social-link social-link-facebook" href="https://www.facebook.com/">
@@ -304,7 +305,8 @@
             </li>
           </ul>
           <a class="footer-copy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-            <img src="img/html-academy.svg" width="27" height="34" alt="Логотип HTML-академии">
+            <span class="visually-hidden">Разработка сайта - HTML Академия</span>
+            <img src="img/html-academy.svg" width="27" height="34" alt="Логотип HTML Академии">
           </a>
         </div>
       </div>
