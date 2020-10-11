@@ -393,8 +393,9 @@ img {
 }
 
 .nav-link-catalog:hover ~ .nav-catalog-list,
+.nav-link-catalog:focus-within ~ .nav-catalog-list,
 .nav-catalog-list:hover,
-.nav-catalog-list:focus {
+.nav-catalog-list:focus-within {
   display: flex;
 } 
 
