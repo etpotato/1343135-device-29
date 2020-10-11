@@ -1630,6 +1630,15 @@ input[type="radio"] + .label-text {
   user-select: none;
 }
 
+input[type="checkbox"]:focus + .label-text,
+input[type="radio"]:focus + .label-text {
+  box-shadow: 
+    0 0 0 1px var(--basic),
+    0 0 0 2px var(--invert)
+  ;
+  border-radius: 2px;
+}
+
 input[type="checkbox"]:disabled + .label-text,
 input[type="radio"]:disabled + .label-text {
   color: var(--label-disabled);
