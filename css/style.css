@@ -370,7 +370,7 @@ img {
 
 .nav-catalog-list {
   position: absolute;
-  top: 25px;
+  top: 22px;
   right: -22px;
   bottom: -50px;
   left: -60px;
@@ -379,8 +379,8 @@ img {
   flex-wrap: wrap;
   align-content: flex-start;
   margin: 0;
-  padding: 27px 60px 25px 60px;
-  min-height: 160px;
+  padding: 30px 60px 25px 60px;
+  min-height: 163px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 20px;
@@ -394,7 +394,6 @@ img {
 
 .nav-item-catalog:hover .nav-catalog-list,
 .nav-item-catalog:focus-within .nav-catalog-list,
-.nav-link-catalog:focus + .nav-catalog-list,
 .nav-catalog-list:hover,
 .nav-catalog-list:focus-within {
   display: flex;
@@ -1195,12 +1194,10 @@ background-image: linear-gradient(var(--accent), var(--accent));
 
 .social-link:hover,
 .social-link:focus {
-  filter: brightness(0);
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .social-link:active {
-  filter: none;
   opacity: 0.1;
 }
 
