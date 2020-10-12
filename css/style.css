@@ -1324,6 +1324,10 @@ background-image: linear-gradient(var(--accent), var(--accent));
   min-width: 200px;
 }
 
+.mail-submit::before {
+  background-color: var(--accent-pale);
+}
+
 /* Close button */
 
 .button-close {
@@ -2037,7 +2041,7 @@ input[type="radio"]:checked + .label-text::after {
   opacity: 1;
 }
 
-.card-compare:active {
+.card .card-compare:active {
   opacity: 0.2;
 }
 
@@ -2077,7 +2081,7 @@ input[type="radio"]:checked + .label-text::after {
   color: var(--basic-dim);
 }
 
-.pagination-link:active {
+.pagination-link[href]:active {
   color: var(--basic);
 }
 
