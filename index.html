@@ -256,7 +256,7 @@
           <a class="contacts-map" href="#">
             <img class="contacts-image" src="img/map.jpg" width="560" height="222" alt="Карта проезда">
           </a>
-          <a class="button info-link" href="#">
+          <a class="button info-link info-link-mail" href="#">
             <span class="button-text">Напишите нам</span>
           </a>
         </section>
@@ -312,37 +312,46 @@
       </div>
     </footer>
     <!-- Попап с картой -->
-    <div class="modal modal-map hidden">
-      <img class="modal-map-image" src="img/map-big.jpg" width="960" height="556" alt="Карта проезда">
-      <button class="button-close button-close-map" type=button>
-        <span class="visually-hidden">Закрыть</span>
-      </button>
+    <div class="modal-wrap modal-wrap-map">
+      <div class="modal-underlay modal-underlay-map"></div>
+      <div class="modal modal-map">
+        <!-- <img class="modal-map-image" src="img/map-big.jpg" width="960" height="556" alt="Карта проезда"> -->
+        <iframe class="modal-map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4498.225097755993!2d37.52524063300294!3d55.68703098053583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1602572699553!5m2!1sen!2sru" width="960" height="556" title="Карта проезда" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <a href="blank.html" class="button-close button-close-map" type=button>
+          <span class="visually-hidden">Закрыть карту проезда</span>
+        </a>
+      </div>
     </div>
     <!-- Попап формы связи -->
-    <section class="modal modal-mail hidden">
-      <div class="mail-container">
-        <h3 class="visually-hidden">Форма обратной связи</h3>
-        <form class="mail-form" action="https://echo.htmlacademy.ru/" method="POST" target="_blank">
-          <label class="mail-label mail-label-name">
-            <span class="mail-label-text">Ваше имя:</span> 
-            <input class="mail-input" type="text" name="mail-name" placeholder="Имя Фамилия" required>
-          </label>
-          <label class="mail-label mail-label-email">
-            <span class="mail-label-text">Ваш e-mail:</span> 
-            <input class="mail-input" type="email" name="mail-email" placeholder="email@example.com" required>
-          </label>
-          <label class="mail-label mail-label-message">
-            <span class="mail-label-text">Текст письма:</span>
-            <textarea class="mail-input mail-input-message" name="mail-message" cols="30" rows="7" placeholder="В свободной форме"></textarea>
-          </label>
-          <button class="button mail-submit" type="submit">
-            <span class="button-text">Отправить</span>
+    <div class="modal-wrap modal-wrap-mail">
+      <div class="modal-underlay modal-underlay-mail"></div>
+      <section class="modal modal-mail">
+        <div class="mail-container">
+          <h3 class="visually-hidden">Форма обратной связи</h3>
+          <form class="mail-form" action="https://echo.htmlacademy.ru/" method="POST" target="_blank">
+            <label class="mail-label mail-label-name">
+              <span class="mail-label-text">Ваше имя:</span> 
+              <input class="mail-input mail-input-name" type="text" name="mail-name" placeholder="Имя Фамилия" required>
+            </label>
+            <label class="mail-label mail-label-email">
+              <span class="mail-label-text">Ваш e-mail:</span> 
+              <input class="mail-input mail-input-email" type="email" name="mail-email" placeholder="email@example.com" required>
+            </label>
+            <label class="mail-label mail-label-message">
+              <span class="mail-label-text">Текст письма:</span>
+              <textarea class="mail-input mail-input-message" name="mail-message" cols="30" rows="7" placeholder="В свободной форме" required></textarea>
+            </label>
+            <button class="button mail-submit" type="submit">
+              <span class="button-text">Отправить</span>
+            </button>
+          </form>
+          <button class="button-close button-close-mail" type="button">
+            <span class="visually-hidden">Закрыть форму обратной связи</span>
           </button>
-        </form>
-        <button class="button-close button-close-mail" type="button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-      </div>
-    </section>
+        </div>
+      </section>
+    </div>
+    <script src="js/popup-map.js"></script>
+    <script src="js/popup-mail.js"></script>
   </body>
 </html>

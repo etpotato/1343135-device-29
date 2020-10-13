@@ -1228,17 +1228,48 @@ background-image: linear-gradient(var(--accent), var(--accent));
   opacity: 0.3;
 }
 
+/* Modal wrap */
+
+.modal-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+@keyframes oncoming {
+  0%   {transform: scale(0); opacity: 0.5;}
+  70%  {transform: scale(1.03); opacity: 1;}
+  100% {transform: scale(1);}
+}
+
+.modal-wrap-show {
+  display: flex;
+  animation: oncoming;
+  animation-duration: 0.5s;
+}
+
+/* Modals underlay */
+
+.modal-underlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 /* Modals */
 
 .modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
+  position: relative;
   min-width: 960px;
   box-shadow: 0 10px 16px 0 var(--basic-faded);
-  z-index: 10;
 }
 
 /* Modal map */
@@ -1252,6 +1283,17 @@ background-image: linear-gradient(var(--accent), var(--accent));
 .modal-mail {
   padding: 92px 100px 60px 100px;
   background-color: var(--invert);
+}
+
+@keyframes shake {
+  0%, 100%                {transform: traslateX(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-3px);}
+  20%, 40%, 60%, 80%      {transform: translateX(3px);}
+}
+
+.modal-mail-error {
+  animation: shake;
+  animation-duration: 0.3s;
 }
 
 .mail-container {
@@ -1308,7 +1350,7 @@ background-image: linear-gradient(var(--accent), var(--accent));
   color: var(--input-placeholder);
 }
 
-.mail-input-invalid {
+.mail-form-check .mail-input:invalid {
   background-color: var(--input-invalid-background);
 }
 
