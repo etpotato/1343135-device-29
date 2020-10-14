@@ -34,16 +34,6 @@ mapUnderlay.addEventListener('click', () => {
   popupMap.classList.remove('modal-wrap-show');  
 });
 
-/* 
-// Вариант с делегированием
-popupMap.addEventListener('click', (evt) => {
-  if (evt.target === mapUnderlay || evt.target === mapClose) {
-    evt.preventDefault();
-    popupMap.classList.remove('modal-wrap-show');
-  }
-});
-*/
-
 // Close map popup with ESC
 window.addEventListener('keydown', (evt) => {
   if (evt.keyCode === 27 || evt.keyCode === 'Escape') {
