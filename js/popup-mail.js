@@ -58,10 +58,10 @@ mailForm.addEventListener('submit', (evt) => {
 
   // Save valid input values in localStorage
   if (isStorageSupport) {
-    for (let mailInput of mailInputs) {
-      if (mailInput.checkValidity()) {
-        let mailInputName = mailInput.getAttribute('name');
-        localStorage.setItem(mailInputName, mailInput.value);
+    for (let i = 0; i < mailInputs.length - 1; i++) {
+      if (mailInputs[i].checkValidity()) {
+        let mailInputName = mailInputs[i].getAttribute('name');
+        localStorage.setItem(mailInputName, mailInputs[i].value);
       }
     }
   }
