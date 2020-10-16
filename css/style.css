@@ -650,11 +650,11 @@ img {
   outline-offset: 5px;
 }
 
-.slider-nav-button:focus:not(:focus-visible) {
+.slider-nav-button:focus:not(:-moz-focusring) {
   outline: none;
 }
 
-.slider-nav-button:focus:not(:-moz-focusring) {
+.slider-nav-button:focus:not(:focus-visible) {
   outline: none;
 }
 
@@ -907,14 +907,6 @@ background-image: linear-gradient(var(--accent), var(--accent));
   min-width: 160px;
 }
 
-.services-button:active {
-  color: var(--accent-pale);
-}
-
-.services-button:active::before {
-  background-color: var(--basic);
-}
-
 .services-button-current {
   color: var(--accent-pale);
 }
@@ -923,11 +915,11 @@ background-image: linear-gradient(var(--accent), var(--accent));
   background-color: transparent;
 }
 
-.services-button:focus:not(:focus-visible) {
+.services-button:focus:not(:-moz-focusring) {
   outline: none;
 }
 
-.services-button:focus:not(:-moz-focusring) {
+.services-button:focus:not(:focus-visible) {
   outline: none;
 }
 
@@ -1403,14 +1395,13 @@ background-image: linear-gradient(var(--accent), var(--accent));
   background-color: var(--accent-pale);
 }
 
-.mail-submit:focus:not(:focus-visible) {
-  outline: none;
-}
-
 .mail-submit:focus:not(:-moz-focusring) {
   outline: none;
 }
 
+.mail-submit:focus:not(:focus-visible) {
+  outline: none;
+}
 
 /* Close button */
 
@@ -1438,11 +1429,11 @@ background-image: linear-gradient(var(--accent), var(--accent));
   opacity: 0.3;
 }
 
-.button-close:focus:not(:focus-visible) {
+.button-close:focus:not(:-moz-focusring) {
   outline: none;
 }
 
-.button-close:focus:not(:-moz-focusring) {
+.button-close:focus:not(:focus-visible) {
   outline: none;
 }
 
@@ -1667,11 +1658,11 @@ background-image: linear-gradient(var(--accent), var(--accent));
   outline-offset: 4px;
 }
 
-.toggle:focus:not(:focus-visible) {
+.toggle:focus:not(:-moz-focusring) {
   outline: none;
 }
 
-.toggle:focus:not(:-moz-focusring) {
+.toggle:focus:not(:focus-visible) {
   outline: none;
 }
 
@@ -1756,13 +1747,13 @@ input[type="radio"]:focus + .label-text {
   ;
 }
 
-input[type="checkbox"]:focus:not(:focus-visible) + .label-text,
-input[type="radio"]:focus:not(:focus-visible) + .label-text {
+input[type="checkbox"]:focus:not(:-moz-focusring) + .label-text,
+input[type="radio"]:focus:not(:-moz-focusring) + .label-text {
   box-shadow: none;
 }
 
-input[type="checkbox"]:focus:not(:-moz-focusring) + .label-text,
-input[type="radio"]:focus:not(:-moz-focusring) + .label-text {
+input[type="checkbox"]:focus:not(:focus-visible) + .label-text,
+input[type="radio"]:focus:not(:focus-visible) + .label-text {
   box-shadow: none;
 }
 
@@ -1881,11 +1872,11 @@ input[type="radio"]:checked + .label-text::after {
   width: 100%;
 }
 
-.filters-submit:focus:not(:focus-visible) {
+.filters-submit:focus:not(:-moz-focusring) {
   outline: none;
 }
 
-.filters-submit:focus:not(:-moz-focusring) {
+.filters-submit:focus:not(:focus-visible) {
   outline: none;
 }
 
