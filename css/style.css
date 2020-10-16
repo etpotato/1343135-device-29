@@ -119,10 +119,10 @@ img {
 /* Container */
 
 .container {
-  max-width: 1160px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
-
 /* Header */
 
 .page-header {
@@ -130,8 +130,15 @@ img {
 }
 
 .header {
+  --header-padding-left-right: 60px;
+  --header-padding-bottom: 50px;
   position: relative;
-  padding: 30px 60px 50px 60px;
+  padding: 
+    30px 
+    var(--header-padding-left-right) 
+    var(--header-padding-bottom) 
+    var(--header-padding-left-right)
+  ;
   background-color: var(--accent-pale);
 }
 
@@ -280,14 +287,16 @@ img {
 /* Navigation list */
 
 .nav-list {
+  --nav-list-margin-right: -38px;
+  --nav-list-line-height: 22px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin: 0 -38px 0 0;
+  margin: 0 var(--nav-list-margin-right) 0 0;
   padding: 0;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 22px;
+  line-height: var(--nav-list-line-height);
   letter-spacing: 0.2em;
   font-weight: 800;
   text-transform: uppercase;
@@ -313,7 +322,7 @@ img {
 }
 
 .nav-item-catalog {
-  flex: 0 0 calc(((100% - 38px)) / 2 - 20px);
+  flex: 0 0 calc((100% + var(--nav-list-margin-right)) / 2 - 20px);
   display: flex;
   margin-right: 40px;
 }
@@ -370,16 +379,16 @@ img {
 
 .nav-catalog-list {
   position: absolute;
-  top: 22px;
-  right: -22px;
-  bottom: -50px;
-  left: -60px;
+  top: var(--nav-list-line-height);
+  bottom: calc(var(--header-padding-bottom) * -1);
+  left: calc(var(--header-padding-left-right) * -1);
   display: none;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: flex-start;
   margin: 0;
   padding: 30px 60px 25px 60px;
+  width: calc(100% + var(--header-padding-left-right) * 2 + var(--nav-list-margin-right));
   min-height: 163px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
@@ -403,6 +412,10 @@ img {
   margin-bottom: 16px;
   margin-right: 62px;
 }
+/* 
+.nav-catalog-item:last-child {
+  flex-basis: 100%;
+} */
 
 /* Button GLOBAL*/
 
@@ -1438,10 +1451,10 @@ background-image: linear-gradient(var(--accent), var(--accent));
 /* Catalog title container */
 
 .page-title-container {
-  max-width: 1160px;
+  max-width: 1200px;
   margin: 0 auto 50px auto;
-  padding-right: 60px;
-  padding-left: 60px;
+  padding-right: 80px;
+  padding-left: 80px;
 }
 
 /* Catalog title */

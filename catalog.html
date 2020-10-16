@@ -6,62 +6,64 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header class="page-header header container">
-      <nav class="site-nav">
-        <a class="logo header-logo" href="index.html">
-          <img src="img/logo-header.svg" width="163" height="35" alt="Логотип магазина электроники «Девайс»">
-        </a>
-        <div class="user-menu header-user-menu">
-          <form class="nav-search-form" action="https://echo.htmlacademy.ru/" method="GET" target="_blank">
-            <label for="nav-search-input"> 
-              <span class="visually-hidden">Поиск по сайту</span>
-            </label>
-            <input class="nav-search-input" id="nav-search-input" type="search" name="nav-search-input" placeholder="Поиск по сайту">
-            <button class="nav-search-button" type="submit">Найти</button>
-          </form>
-          <div class="header-login-wrap">
-            <a class="header-link login header-login" href="blank.html" aria-label="Страница личного профиля. Валентин Петухов">Валентин Петухов</a>
-            <a class="header-link logout header-logout" href="blank.html" aria-label="Выйти из личного профиля">Выйти</a>
-            <!-- 
-            <a class="header-link login header-login" href="blank.html" aria-label="Войти в личный профиль">Войти</a>
-            -->
+    <div class="container header-container">
+      <header class="page-header header">
+        <nav class="site-nav">
+          <a class="logo header-logo" href="index.html">
+            <img src="img/logo-header.svg" width="163" height="35" alt="Логотип магазина электроники «Девайс»">
+          </a>
+          <div class="user-menu header-user-menu">
+            <form class="nav-search-form" action="https://echo.htmlacademy.ru/" method="GET" target="_blank">
+              <label for="nav-search-input"> 
+                <span class="visually-hidden">Поиск по сайту</span>
+              </label>
+              <input class="nav-search-input" id="nav-search-input" type="search" name="nav-search-input" placeholder="Поиск по сайту">
+              <button class="nav-search-button" type="submit">Найти</button>
+            </form>
+            <div class="header-login-wrap">
+              <a class="header-link login header-login" href="blank.html" aria-label="Страница личного профиля. Валентин Петухов">Валентин Петухов</a>
+              <a class="header-link logout header-logout" href="blank.html" aria-label="Выйти из личного профиля">Выйти</a>
+              <!-- 
+              <a class="header-link login header-login" href="blank.html" aria-label="Войти в личный профиль">Войти</a>
+              -->
+            </div>
+            <a class="header-link compare header-compare" href="blank.html" aria-label="Открыть список сравнения">Сравнить</a>
+            <a class="header-link cart header-cart" href="blank.html">Корзина</a>
           </div>
-          <a class="header-link compare header-compare" href="blank.html" aria-label="Открыть список сравнения">Сравнить</a>
-          <a class="header-link cart header-cart" href="blank.html">Корзина</a>
-        </div>
-        <ul class="nav-list header-nav-list">
-          <li class="nav-item nav-item-catalog">
-            <a class="nav-link nav-link-catalog" href="catalog.html">Катaлог товаров</a>
-            <!-- Открытый выпадающий список, начало -->
-            <ul class="nav-catalog-list">
-              <li class="nav-catalog-item">
-                <a class="nav-catalog-link" href="catalog.html">Виртуальная реальность</a>
-              </li>
-              <li class="nav-catalog-item">
-                <a class="nav-catalog-link">Моноподы для&nbsp;селфи</a>
-              </li>
-              <li class="nav-catalog-item">
-                <a class="nav-catalog-link" href="catalog.html">Экшн-камеры</a>
-              </li>
-              <li class="nav-catalog-item">
-                <a class="nav-catalog-link" href="catalog.html">Фитнес-браслеты</a>
-              </li>
-              <li class="nav-catalog-item">
-                <a class="nav-catalog-link" href="catalog.html">Умные часы</a>
-              </li>
-              <br>
-              <li class="nav-catalog-item">
-                <a class="nav-catalog-link" href="catalog.html">Квадрокоптер</a>
-              </li>
-            </ul>
-            <!-- Открытый выпадающий список, конец -->
-          </li>
-          <li class="nav-item"><a class="nav-link" href="blank.html">Доставка</a></li>
-          <li class="nav-item"><a class="nav-link" href="blank.html">Гарантия</a></li>
-          <li class="nav-item"><a class="nav-link" href="blank.html">Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
+          <ul class="nav-list header-nav-list">
+            <li class="nav-item nav-item-catalog">
+              <a class="nav-link nav-link-catalog" href="catalog.html">Катaлог товаров</a>
+              <!-- Открытый выпадающий список, начало -->
+              <ul class="nav-catalog-list">
+                <li class="nav-catalog-item">
+                  <a class="nav-catalog-link" href="catalog.html">Виртуальная реальность</a>
+                </li>
+                <li class="nav-catalog-item">
+                  <a class="nav-catalog-link">Моноподы для&nbsp;селфи</a>
+                </li>
+                <li class="nav-catalog-item">
+                  <a class="nav-catalog-link" href="catalog.html">Экшн-камеры</a>
+                </li>
+                <li class="nav-catalog-item">
+                  <a class="nav-catalog-link" href="catalog.html">Фитнес-браслеты</a>
+                </li>
+                <li class="nav-catalog-item">
+                  <a class="nav-catalog-link" href="catalog.html">Умные часы</a>
+                </li>
+                <br>
+                <li class="nav-catalog-item">
+                  <a class="nav-catalog-link" href="catalog.html">Квадрокоптер</a>
+                </li>
+              </ul>
+              <!-- Открытый выпадающий список, конец -->
+            </li>
+            <li class="nav-item"><a class="nav-link" href="blank.html">Доставка</a></li>
+            <li class="nav-item"><a class="nav-link" href="blank.html">Гарантия</a></li>
+            <li class="nav-item"><a class="nav-link" href="blank.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <main class="page-main">
       <div class="page-title-container">
         <h1 class="main-title page-title">Моноподы для&nbsp;селфи</h1>
