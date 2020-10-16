@@ -633,6 +633,18 @@ img {
   cursor: pointer;
 }
 
+.slider-nav-button:focus {
+  outline-offset: 5px;
+}
+
+.slider-nav-button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.slider-nav-button:focus:not(:-moz-focusring) {
+  outline: none;
+}
+
 .slider-nav-button::before {
   content: "";
   position: absolute;
@@ -896,6 +908,14 @@ background-image: linear-gradient(var(--accent), var(--accent));
 
 .services-button-current::before {
   background-color: transparent;
+}
+
+.services-button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.services-button:focus:not(:-moz-focusring) {
+  outline: none;
 }
 
 /* Brands */
@@ -1370,6 +1390,15 @@ background-image: linear-gradient(var(--accent), var(--accent));
   background-color: var(--accent-pale);
 }
 
+.mail-submit:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.mail-submit:focus:not(:-moz-focusring) {
+  outline: none;
+}
+
+
 /* Close button */
 
 .button-close {
@@ -1394,6 +1423,14 @@ background-image: linear-gradient(var(--accent), var(--accent));
 
 .button-close:active {
   opacity: 0.3;
+}
+
+.button-close:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.button-close:focus:not(:-moz-focusring) {
+  outline: none;
 }
 
 /* Catalog page */
@@ -1613,6 +1650,18 @@ background-image: linear-gradient(var(--accent), var(--accent));
   cursor: pointer;
 }
 
+.toggle:focus {
+  outline-offset: 4px;
+}
+
+.toggle:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.toggle:focus:not(:-moz-focusring) {
+  outline: none;
+}
+
 /* Price controls */
 
 .price-controls {
@@ -1636,6 +1685,10 @@ background-image: linear-gradient(var(--accent), var(--accent));
   font-size: inherit;
   line-height: inherit;
   background-color: transparent;
+}
+
+.price-input:focus {
+  outline-offset: 3px;
 }
 
 /* Color filter */
@@ -1685,18 +1738,19 @@ input[type="checkbox"]:focus + .label-text,
 input[type="radio"]:focus + .label-text {
   border-radius: 2px;
   box-shadow: 
-    0 0 0 1px solid var(--basic),
-    0 0 0 2px solid var(--invert)
-  ;
-}
-
-input[type="checkbox"]:focus + .label-text,
-input[type="radio"]:focus + .label-text {
-  box-shadow: 
     0 0 0 1px var(--basic),
     0 0 0 2px var(--invert)
   ;
-  border-radius: 2px;
+}
+
+input[type="checkbox"]:focus:not(:focus-visible) + .label-text,
+input[type="radio"]:focus:not(:focus-visible) + .label-text {
+  box-shadow: none;
+}
+
+input[type="checkbox"]:focus:not(:-moz-focusring) + .label-text,
+input[type="radio"]:focus:not(:-moz-focusring) + .label-text {
+  box-shadow: none;
 }
 
 input[type="checkbox"]:disabled + .label-text,
@@ -1812,6 +1866,14 @@ input[type="radio"]:checked + .label-text::after {
 
 .filters-submit {
   width: 100%;
+}
+
+.filters-submit:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.filters-submit:focus:not(:-moz-focusring) {
+  outline: none;
 }
 
 /* Catalog */
