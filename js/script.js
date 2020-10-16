@@ -28,6 +28,7 @@ const switchSlides = (evt) => {
 };
 
 sliderNavList.addEventListener('click', evt => {
+  evt.preventDefault();
   if (evt.target.closest('.slider-nav-button') && !evt.target.closest('.slider-nav-button-current')) {
     switchSlides(evt);
   }
@@ -66,6 +67,7 @@ const switchServices = (evt) => {
 };
 
 servicesNavList.addEventListener('click', evt => {
+  evt.preventDefault();
   if (evt.target.closest('.services-button') && !evt.target.closest('.services-button-current')) {
     switchServices(evt);
   }
